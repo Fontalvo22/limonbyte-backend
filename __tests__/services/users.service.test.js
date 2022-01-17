@@ -6,10 +6,9 @@ describe('test users service', () => {
         const indexMethod = service.index()
 
         expect(indexMethod.length).toBeLessThanOrEqual(30);
-        expect(indexMethod[0].firstName).toBeDefined();
-        expect(indexMethod[0].lastName).toBeDefined();
-        expect(indexMethod[0].identityCardNumber).toBeDefined();
+        expect(indexMethod[0].first_name).toBeDefined();
+        expect(indexMethod[0].last_name).toBeDefined();
+        expect(indexMethod[0].c_i).toBeDefined();
 
-        // console.log(indexMethod[0].identityCardNumber);
     });
 });
